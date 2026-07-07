@@ -4,7 +4,7 @@ This repository contains the Python analysis scripts used for the manuscript **"
 
 ## Data
 
-The data are archived on Zenodo rather than stored in this GitHub repository, because the complete input and output package includes large geospatial and raster files.
+The data are archived on Zenodo rather than stored in this GitHub repository, because the complete input and output package includes large geospatial files. The VIIRS/NPP night-time light raster used by the analysis is public third-party data and should be downloaded directly from the Earth Observation Group (EOG), rather than redistributed through Zenodo or GitHub.
 
 **Zenodo data record:** `ZENODO_DOI_OR_RECORD_URL`
 
@@ -14,11 +14,23 @@ After downloading and extracting `Road_Vibration_Energy_Global_data_only.zip` fr
 code/
 Data/
 GIS/
-Raster/
 Output/
 ```
 
-The scripts use paths relative to the project root, for example `PROJECT_ROOT / "Data"` and `PROJECT_ROOT / "GIS"`.
+Then download the VIIRS/NPP night-time light raster from the official EOG source:
+
+- EOG VIIRS Nighttime Lights product page: <https://eogdata.mines.edu/products/vnl/>
+- Annual VNL V2 2021 download directory: <https://eogdata.mines.edu/nighttime_light/annual/v20/2021/>
+- File used in this study: `VNL_v2_npp_2021_global_vcmslcfg_c202203152300.average_masked.tif`
+
+Place the raster under the repository root using the path expected by the scripts:
+
+```text
+Raster/VNL_v2_npp_2021_global_vcmslcfg_c202203152300.average_masked.tif/
+  VNL_v2_npp_2021_global_vcmslcfg_c202203152300.average_masked.tif
+```
+
+The scripts use paths relative to the project root, for example `PROJECT_ROOT / "Data"`, `PROJECT_ROOT / "GIS"` and `PROJECT_ROOT / "Raster"`.
 
 ## Repository Contents
 
