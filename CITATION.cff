@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated Zenodo data record and manuscript."
+title: "Code for global road vibration energy assessment"
+authors:
+  - family-names: Zhu
+    given-names: Xingyi
+  - family-names: Li
+    given-names: Ruimin
+  - family-names: Cai
+    given-names: Wenyuan
+date-released: "2026-07-07"
+url: "GITHUB_REPOSITORY_URL"
+repository-code: "GITHUB_REPOSITORY_URL"
+identifiers:
+  - type: doi
+    value: "ZENODO_DOI_OR_RECORD_URL"
